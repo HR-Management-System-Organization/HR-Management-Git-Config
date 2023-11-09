@@ -1,2 +1,1 @@
-# java10_config
-java10_config
+# HR Management System Git Config Repo
