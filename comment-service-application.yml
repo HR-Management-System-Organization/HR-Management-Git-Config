@@ -1,0 +1,30 @@
+server:
+  port: 7074
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "*"
+            allowed-headers: "*"
+            allowed-methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123456789
+    url: jdbc:postgresql://localhost:5432/CommentServiceDB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: user

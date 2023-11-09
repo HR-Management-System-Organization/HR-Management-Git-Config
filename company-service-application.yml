@@ -1,0 +1,24 @@
+server:
+  port: 7073
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123456789
+    url: jdbc:postgresql://localhost:5432/CompanyServiceDB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+rabbitmq:
+  auth-exchange: auth-exchange
+  register-binding-key: register-key
+  register-queue: register-queue
+  activation-binding-key: activation-key
+  activation-queue: queue-activation
+  mail-queue: mail-queue
+  mail-binding-key: mail-binding-key
+  company-queue: company-queue
+  company-binding-key: company-binding-key
