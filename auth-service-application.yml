@@ -28,7 +28,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root
-    url: jdbc:postgresql://34.173.81.212:6060/AuthServiceDB
+    url: jdbc:postgresql://34.41.238.196:6060/AuthServiceDB
   jpa:
     hibernate:
       ddl-auto: update
