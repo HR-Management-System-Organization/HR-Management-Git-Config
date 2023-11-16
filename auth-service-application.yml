@@ -27,7 +27,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: ${POSTGREPW}
+    password: root
     url: jdbc:postgresql://34.173.81.212:6060/AuthServiceDB
   jpa:
     hibernate:
