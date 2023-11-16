@@ -17,14 +17,14 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: root
+    password: ${POSTGREPW}
     url: jdbc:postgresql://34.41.238.196:6060/CommentServiceDB
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
   rabbitmq:
-    host: localhost
+    host: 10.112.6.155
     port: 5672
     username: user
     password: user
