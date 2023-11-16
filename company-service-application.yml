@@ -1,11 +1,28 @@
 server:
   port: 7073
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAUDUM6GSLAFHR2RFS
+      secret-key: 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
+    region:
+      static: eu-north-1
+    stack:
+      auto: false
 
+application:
+  bucket:
+    name: springboot3hrmanagement
 spring:
+  rabbitmq:
+    host: 10.112.6.155
+    port: 5672
+    username: user
+    password: user
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: root
+    password: ${POSTGREPW}
     url: jdbc:postgresql://34.41.238.196:6060/CompanyServiceDB
   jpa:
     hibernate:
@@ -22,3 +39,9 @@ rabbitmq:
   mail-binding-key: mail-binding-key
   company-queue: company-queue
   company-binding-key: company-binding-key
+  company-queue2: company-queue2
+  company-binding-key2: company-binding-key2
+  company-queue3: company-queue2
+  company-binding-key3: company-binding-key2
+  expense-queue: expense-queue
+  expense-binding-key: expense-binding-key
