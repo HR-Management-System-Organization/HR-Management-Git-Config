@@ -18,7 +18,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root
-    url: jdbc:postgresql://localhost:5432/CommentServiceDB
+    url: jdbc:postgresql://34.41.238.196:6060/CommentServiceDB
   jpa:
     hibernate:
       ddl-auto: update
